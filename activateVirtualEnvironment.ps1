@@ -1,2 +1,2 @@
-python -m venv sdyWiki\
-.\sdyWiki\Scripts\activate
+python -m venv wikiVirtualEnvironment\
+.\wikiVirtualEnvironment\Scripts\activate
