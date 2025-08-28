@@ -14,6 +14,8 @@ theme:
   font:
     text: Afacad Flux 
     code: Red Hat Mono
+  icon:
+    logo: 
   
   palette:
   # Dark Mode
@@ -23,6 +25,7 @@ theme:
         name: Dark mode
       primary: green
       accent: deep purple
+
     # Light Mode
     - scheme: default
       toggle:
@@ -31,9 +34,18 @@ theme:
       primary: blue
       accent: deep orange
 
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
 
-  features:
+feature:
     - navigation.instant
     - navigation.instant.progress
     - navigation.instant.preview
@@ -48,14 +60,16 @@ nav:
   - Home: index.md
   - About:
     - About The Project: about/about.md
+  - First Time User:
+    - docs\FirstTimeUser\TilslutningTilInfrastuktur
   - Github Codeexamples:
     - Github Codeexamples: docs\GithubCodeexamples\GithubCodeexamples.md
   - General Directives:
     - Guide to Best-Practice Application Patterns: docs\Anvisninger\Generelt\AnvisningerGenerelt.md
     - Guide to Best-Practice Directives: docs\Anvisninger\Generelt\VejledningGenerelt.md
   - Directives SDI:
-    - Document Object: docs\Anvisninger\SDI\AnvisningerDokumentobjektetSagsDokumentobjekt.md
-    - Case Object: docs\Anvisninger\SDI\AnvisningerSagsObjekt.md
+    - Document (Dokument) Object: docs\Anvisninger\SDI\AnvisningerDokumentobjektetSagsDokumentobjekt.md
+    - Case (Sag) Object: docs\Anvisninger\SDI\AnvisningerSagsObjekt.md
   - Directives YDI:
     - Grant (Bevillings) Object: docs\Anvisninger\YDI\AnvisningerBevillingsobjekt.md
     - Economic Effectuation (Økonomisk Effektuerings) Object: docs\Anvisninger\YDI\AnvisningerOekonomiskEffektueringsobjektet.md
